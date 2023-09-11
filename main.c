@@ -33,10 +33,7 @@ void sendfromfile(int socketid, const char* path)
 
         if(fclose(file) != 0) printf("File can't be closed properly.");
     }
-    else
-    {
-        printf("File can't be opened.");
-    }
+    else printf("File can't be opened.");
 }
 
 int main(int argc, char *argv[]) {
@@ -48,10 +45,7 @@ int main(int argc, char *argv[]) {
     if (argc == 2)
     {
         printf("IP SET:'%s'\n",argv[1]);
-        for (int i = 0; i < 15;i++)
-        {
-            ip[i] = argv[1][i];
-        }
+        for (int i = 0; i < 15;i++) ip[i] = argv[1][i];
     }
 
     char opt = 'q';
