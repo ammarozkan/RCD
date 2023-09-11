@@ -39,11 +39,6 @@ void sendfromfile(int socketid, const char* path)
     }
 }
 
-int getmysocketready(char *addr, int port)
-{
-
-}
-
 int main(int argc, char *argv[]) {
     printf("Creating the socket.\n");
 
